@@ -1,0 +1,38 @@
+#tictactoe {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  width: 364px;
+}
+
+.box {
+  box-sizing: border-box;
+  background-color: black;
+  border: 3px solid white;
+  font-size: 80px;
+  color: #ffffff;
+  border-radius: 10px 10px 10px 10px;
+  height: 120px;
+  flex: 0 0 33%;
+  text-align: center;
+}
+
+.disabled {
+  background-color: silver;
+}
+
+#tictactoe > .circle {
+  background-color: crimson;
+}
+
+#tictactoe > .cross {
+  background-color: dodgerblue;
+}
+
+.circle:after {
+  content: "O";
+}
+
+.cross:after {
+  content: "X";
+}
